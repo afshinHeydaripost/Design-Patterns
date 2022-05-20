@@ -1,3 +1,4 @@
+using Design_Patterns.Class;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Design_Patterns.Controllers
@@ -6,11 +7,6 @@ namespace Design_Patterns.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -19,15 +15,17 @@ namespace Design_Patterns.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public IActionResult Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            string res = "";
+            double cast = 0;
+            Beverage beverage = new Espersso();
+            res = beverage.getDescription();
+            cast += beverage.cost();
+            beverage = new mocha(beverage);
+            res += beverage.getDescription();
+            cast += beverage.cost();
+            return Ok(res + "$" + cast);
         }
     }
 }

@@ -24,11 +24,5 @@ namespace Design_Patterns.Class
             }
             return instance;
         }
-
-
-        public int grti()
-        {
-            return 5 + 5;
-        }
     }
 }

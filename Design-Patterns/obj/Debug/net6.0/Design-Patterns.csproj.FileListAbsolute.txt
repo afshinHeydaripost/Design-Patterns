@@ -4,7 +4,6 @@ F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Design-Patte
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Design-Patterns.deps.json
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Design-Patterns.runtimeconfig.json
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Design-Patterns.dll
-F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\ref\Design-Patterns.dll
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Design-Patterns.pdb
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Microsoft.OpenApi.dll
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -26,3 +25,4 @@ F:\Design-Patterns\Design-Patterns\Design-Patterns\obj\Debug\net6.0\ref\Design-P
 F:\Design-Patterns\Design-Patterns\Design-Patterns\obj\Debug\net6.0\Design-Patterns.pdb
 F:\Design-Patterns\Design-Patterns\Design-Patterns\obj\Debug\net6.0\Design-Patterns.genruntimeconfig.cache
 F:\Design-Patterns\Design-Patterns\Design-Patterns\bin\Debug\net6.0\RPCoreLibrary.dll
+F:\Design-Patterns\Design-Patterns\Design-Patterns\obj\Debug\net6.0\refint\Design-Patterns.dll
