@@ -1,7 +1,7 @@
 using System;
 namespace Design_Patterns.Class
 {
-    public abstract  class CarClassCreator
+    public abstract class CarClassCreator
     {
         public abstract ICar CreatCar(CarClass carClass);
     }
@@ -28,6 +28,9 @@ namespace Design_Patterns.Class
                     break;
                 case CarClass.Cross:
                     car = new CossCar();
+                    break;
+                default:
+                    car = new SedanCar();
                     break;
             }
             return car;
