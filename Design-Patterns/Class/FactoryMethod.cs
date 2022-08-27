@@ -1,7 +1,7 @@
 using System;
 namespace Design_Patterns.Class
 {
-    public abstract class CarClassCreator
+    public abstract  class CarClassCreator
     {
         public abstract ICar CreatCar(CarClass carClass);
     }
@@ -50,7 +50,7 @@ namespace Design_Patterns.Class
     {
         public string GetCarClass()
         {
-            return CarClass.Sedan.ToString();
+            return CarClass.Coupe.ToString();
         }
     }
 
@@ -58,21 +58,21 @@ namespace Design_Patterns.Class
     {
         public string GetCarClass()
         {
-            return CarClass.Sedan.ToString();
+            return CarClass.Van.ToString();
         }
     }
     public class SuvCar : ICar
     {
         public string GetCarClass()
         {
-            return CarClass.Sedan.ToString();
+            return CarClass.Suv.ToString();
         }
     }
     public class CossCar : ICar
     {
         public string GetCarClass()
         {
-            return CarClass.Sedan.ToString();
+            return CarClass.Cross.ToString();
         }
     }
     public enum CarClass
